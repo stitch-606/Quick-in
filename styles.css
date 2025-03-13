@@ -1,0 +1,35 @@
+
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.day-mode {
+    background-color: white;
+    color: black;
+}
+
+body.night-mode {
+    background-color: black;
+    color: rgb(248, 243, 243);
+}
+
+.container {
+    padding: 20px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: inherit;
+}
+
+.icon-button:focus {
+    outline: none;
+}
+
+.escalation{
+}
