@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Team Leaders Quick Access Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Team Leaders Quick Access Dashboard</h1>
+    
+    <div class="buttons">
+        <button class="category-button" onclick="toggleCategory('monitoring-forms')">Monitoring Forms</button>
+        <button class="category-button" onclick="toggleCategory('automated-submissions')">Automated Submissions</button>
+        <button class="category-button" onclick="toggleCategory('dashboards')">Dashboards</button>
+        <button class="category-button" onclick="showAll()">All</button>
+    </div>
+
+    <div id="monitoring-forms" class="category hidden">
+        <ul>
+            <li><a href="#">Hold</a></li>
+            <li><a href="#">Credit Validation</a></li>
+            <li><a href="#">TOC</a></li>
+            <li><a href="#">Escalations</a></li>
+        </ul>
+    </div>
+
+    <div id="automated-submissions" class="category hidden">
+        <ul>
+            <li><a href="#">OT Form</a></li>
+            <li><a href="#">Coaching</a></li>
+            <li><a href="#">Coaching Adjustment Form</a></li>
+            <li><a href="#">QA Dispute</a></li>
+        </ul>
+    </div>
+
+    <div id="dashboards" class="category hidden">
+        <ul>
+            <li><a href="#">Tableau</a></li>
+            <li><a href="#">RTM</a></li>
+            <li><a href="#">Reporting</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
