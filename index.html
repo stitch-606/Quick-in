@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Leaders Quick Access Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <header>
+        <h1>Quick</h1>
+	<img src="intelcia.png" alt="Dashboard Logo" class="logo">
+    </header>
+
+    <div class="buttons">
+        <button class="category-button" onclick="toggleCategory('monitoring-forms')">Monitoring Forms</button>
+        <button class="category-button" onclick="toggleCategory('automated-submissions')">Automated Submissions</button>
+        <button class="category-button" onclick="toggleCategory('dashboards')">Dashboards</button>
+        <button class="category-button" onclick="showAll()">All</button>
+    </div>
+
+    <div id="monitoring-forms" class="category hidden">
+        <ul>
+            <li><a href="https://forms.office.com/r/Sc8CsVkFkE">Hold</a></li>
+            <li><a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHAYJl0aiJOuiGkpaxVvdY758AzU-zkw-pY1YVnnfvO8ZVHw/viewform?pli=1">Credit Validation</a></li>
+            <li><a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_55FXZYpfEWpErxtKVHVBpkdUOTNLTVZKV1NNMFQyODNDNVJST0RLWEM1VC4u&route=shorturl">TOC</a></li>
+            <li><a href="https://forms.office.com/r/c6Q46sSwuN">Escalations</a></li>
+        </ul>
+    </div>
+
+    <div id="automated-submissions" class="category hidden">
+        <ul>
+            <li><a href="https://forms.office.com/r/Yj8BQRC96M">OT Form</a></li>
+            <li><a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_54YY-BJsDbpBmPWwOrjFHDxUM01QVEJUUjVPUzA1RTQ0UUhCV0hWRUZYVi4u&route=shorturl">Coaching</a></li>
+            <li><a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_54YY-BJsDbpBmPWwOrjFHDxUQjc3REYxVFNDSldPM05QRzY0QlZaTE0yOS4u&route=shorturl">Coaching Adjustment Form</a></li>
+            <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=wF1Tz_xz6kGhdBfzfO1_5-ZJ-hMftkJAoS6UgQSJ5opUMVRLRktMVFFFREhMTFFYUlI5M1hJSkJCNi4u">QA Dispute</a></li>
+        </ul>
+    </div>
+
+    <div id="dashboards" class="category hidden">
+        <ul>
+            <li><a href="https://sso.online.tableau.com/public/idp/SSO">Tableau</a></li>
+            <li><a href="#">RTM</a></li>
+            <li><a href="#">Reporting</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
