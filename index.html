@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Leaders Quick Access Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="logo.png">
+    <title>Quick in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/accessability.png">
 </head>
 <body>
-    <header>
-        <h1>Quick in</h>
-<!-- 	<img src="./intelcia.png" alt="Dashboard Logo" class="logo"> -->
-    </header>
+    <div class="app">
+        <header class="header">
+            <div class="header-content">
+                <div class="title-section">
+                    <h1 class="title">Tech Support Dashboard</h1>
+                    <div class="header-utils">
+                        <div class="clock" id="clock"></div>
+                        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search tools, forms, and resources..." autocomplete="off">
+                </div>
+            </div>
+        </header>
 
-    <div class="buttons">
-        <button class="category-button" onclick="toggleCategory('monitoring-forms')">Monitoring Forms</button>
-        <button class="category-button" onclick="toggleCategory('automated-submissions')">Automated Submissions</button>
-        <button class="category-button" onclick="toggleCategory('dashboards')">Dashboards</button>
-        <button class="category-button" onclick="showAll()">All</button>
+        <main class="main">
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All Tools</button>
+                <button class="category-btn" data-category="DU">Daily Used</button>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+    <a href="https://www.optimum.net/outage-map" target="_blank">
+        <div class="card-icon">
+            <img src="./img/outageMap.png" alt="Outage Map">
+        </div>
+        <div class="card-content">
+            <div class="card-title">Outage Map</div>
+            <div class="card-category">Network Tools</div>
+        </div>
+    </a>
+</div>
+                            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Designed & Developed by <a href="https://msmelok.github.io/R4_2.0" target="_blank">Muhammad Meluk</a> Maintaned by <a href="#" target="_blank">Mohamed nasr ( AkA STiTCH )</a></p>
+        </footer>
     </div>
 
-    <div id="monitoring-forms" class="category hidden">
-        <ul>
-            <li><a href="https://forms.office.com/r/Sc8CsVkFkE">Hold</a></li>
-            <li><a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHAYJl0aiJOuiGkpaxVvdY758AzU-zkw-pY1YVnnfvO8ZVHw/viewform?pli=1">Credit Validation</a></li>
-            <li><a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_55FXZYpfEWpErxtKVHVBpkdUOTNLTVZKV1NNMFQyODNDNVJST0RLWEM1VC4u&route=shorturl">TOC</a></li>
-            <li><a href="https://forms.office.com/r/c6Q46sSwuN">Escalations</a></li>
-        </ul>
-    </div>
-
-    <div id="automated-submissions" class="category hidden">
-        <ul>
-            <li><a href="https://forms.office.com/r/Yj8BQRC96M">OT Form</a></li>
-            <li><a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_54YY-BJsDbpBmPWwOrjFHDxUM01QVEJUUjVPUzA1RTQ0UUhCV0hWRUZYVi4u&route=shorturl">Coaching</a></li>
-            <li><a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_54YY-BJsDbpBmPWwOrjFHDxUQjc3REYxVFNDSldPM05QRzY0QlZaTE0yOS4u&route=shorturl">Coaching Adjustment Form</a></li>
-            <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=wF1Tz_xz6kGhdBfzfO1_5-ZJ-hMftkJAoS6UgQSJ5opUMVRLRktMVFFFREhMTFFYUlI5M1hJSkJCNi4u">QA Dispute</a></li>
-        </ul>
-    </div>
-
-    <div id="dashboards" class="category hidden">
-        <ul>
-            <li><a href="https://sso.online.tableau.com/public/idp/SSO">Tableau</a></li>
-            <li><a href="#">RTM</a></li>
-            <li><a href="#">Reporting</a></li>
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
