@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick in</title>
+    <title>Middle Managment Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="./img/accessability.png">
+    <link rel="icon" type="image/png" href="./logo.png">
 </head>
 <body>
     <div class="app">
         <header class="header">
             <div class="header-content">
                 <div class="title-section">
-                    <h1 class="title">Tech Support Dashboard</h1>
+                    <h1 class="title">Middle Managment Dashboard</h1>
                     <div class="header-utils">
                         <div class="clock" id="clock"></div>
                         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -36,27 +36,133 @@
 
         <main class="main">
             <div class="categories">
-                <button class="category-btn active" data-category="all">All Tools</button>
-                <button class="category-btn" data-category="DU">Daily Used</button>
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="Monitoring Forms">Monitoring Forms</button>
+                <button class="category-btn" data-category="Automated Submissions">Automated Submissions</button>
+                <button class="category-btn" data-category="Dashboards">Dashboards</button>
             </div>
 
             <div class="grid">
-                <div class="card">
-    <a href="https://www.optimum.net/outage-map" target="_blank">
-        <div class="card-icon">
-            <img src="./img/outageMap.png" alt="Outage Map">
-        </div>
-        <div class="card-content">
-            <div class="card-title">Outage Map</div>
-            <div class="card-category">Network Tools</div>
-        </div>
-    </a>
-</div>
-                            </div>
+                <!-- Monitoring Forms -->
+                <div class="card" data-category="Monitoring Forms">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/hold.png" alt="Hold">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Hold</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Monitoring Forms">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/credit_validation.png" alt="Credit Validation">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Credit Validation</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Monitoring Forms">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/toc.png" alt="TOC">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">TOC</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Monitoring Forms">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/escalations.png" alt="Escalations">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Escalations</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Automated Submissions -->
+                <div class="card" data-category="Automated Submissions">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/ot_form.png" alt="OT Form">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">OT Form</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Automated Submissions">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/coaching.png" alt="Coaching">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Coaching</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Automated Submissions">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/coaching_adjustment.png" alt="Coaching Adjustment Form">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Coaching Adjustment Form</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Automated Submissions">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/qa_dispute.png" alt="QA Dispute">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">QA Dispute</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Dashboards -->
+                <div class="card" data-category="Dashboards">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/tableau.png" alt="Tableau">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Tableau</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Dashboards">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/rtm.png" alt="RTM">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">RTM</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="Dashboards">
+                    <a href="#" target="_blank">
+                        <div class="card-icon">
+                            <img src="./img/reporting.png" alt="Reporting">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">Reporting</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </main>
 
         <footer class="footer">
-            <p>Designed & Developed by <a href="https://msmelok.github.io/R4_2.0" target="_blank">Muhammad Meluk</a> Maintaned by <a href="#" target="_blank">Mohamed nasr ( AkA STiTCH )</a></p>
+            <p>Designed by <a href="https://msmelok.github.io/R4_2.0" target="_blank">Muhammad Meluk</a> Developed by <a href="#" target="_blank">Mohamed nasr ( AkA STiTCH )</a></p>
         </footer>
     </div>
 

@@ -49,17 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
     updateClock();
     setInterval(updateClock, 1000);
 
-    // Enhanced search functionality with category filtering
+    // Enhanced search functionality
     function filterCards(searchTerm = '') {
         searchTerm = searchTerm.toLowerCase().trim();
-        
+
         cards.forEach(card => {
             const cardText = card.textContent.toLowerCase();
-            const category = card.dataset.category;
             const matchesSearch = cardText.includes(searchTerm);
-            const matchesCategory = currentCategory === 'all' || category === currentCategory;
-            
-            if (matchesSearch && matchesCategory) {
+
+            // Show cards that match the search term, regardless of the selected category
+            if (matchesSearch) {
                 card.classList.remove('hidden');
                 card.style.animation = 'none';
                 card.offsetHeight; // Trigger reflow
@@ -77,7 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
             button.classList.add('active');
             
             currentCategory = button.dataset.category;
-            filterCards(searchInput.value);
+
+            // Filter by category only when no search term is entered
+            if (!searchInput.value.trim()) {
+                cards.forEach(card => {
+                    const category = card.dataset.category;
+                    if (currentCategory === 'all' || category === currentCategory) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
         });
     });
 
