@@ -3,7 +3,7 @@
 :root {
   /* Light theme variables */
   --primary: #f472b6; /* Pink */
-  --primary-light: #f9a8d4; /* Light Pink */
+  --primary-light: #db2777; /* Light Pink */
   --primary-dark: #ec4899; /* Dark Pink */
   --surface: #ffffff;
   --surface-hover: #f8fafc;
@@ -26,7 +26,7 @@
 [data-theme="dark"] {
   /* Dark theme variables */
   --primary: #f9a8d4; /* Light Pink */
-  --primary-light: #f8a8d6; /* Softer Pink */
+  --primary-light: #db2777; /* Softer Pink */
   --primary-dark: #db2777; /* Deep Pink */
   --surface: #1e293b; /* Dark Surface */
   --surface-hover: #334155; /* Darker Surface Hover */
