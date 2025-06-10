@@ -43,6 +43,18 @@
                 <button class="category-btn" data-category="Tools">Tools</button>
             </div>
 
+            <div id="password-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Shared Services Access</h2>
+            <input type="password" id="password-input" placeholder="Enter password..." autofocus />
+            <div class="modal-actions">
+                <button id="password-submit">Submit</button>
+                <button id="password-cancel">Cancel</button>
+            </div>
+            <div id="password-error" class="error-message"></div>
+        </div>
+        </div>
+
             <div class="grid">
                 <!-- Monitoring Forms -->
                 <div class="card" data-category="Monitoring Forms">
@@ -282,7 +294,40 @@
                         </div>
                     </a>
                 </div>
-            </div>
+                <!-- Shared Services -->
+                <div class="card" data-category="shared services">
+                    <a href="https://cvcmail.sharepoint.com/:u:/r/sites/PA/SitePages/Home.aspx?e=4%3af2f549cf72084c11b3300b221377887e&web=1&sharingv2=true&fromShare=true&at=9" target="_blank">
+                        <div class="card-icon">
+                            <img src="./sharepoint.png" alt="SharePoint">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">SS Sharepoint</div>
+                            <div class="card-category">Shared Services</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="shared services">
+                    <a href="https://forms.office.com/r/i2EQjAUbG5" target="_blank">
+                        <div class="card-icon">
+                            <img src="./ion-ion-logo-png-transparent.png" alt="SS ION's">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">SS ION's</div>
+                            <div class="card-category">Shared Services</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" data-category="shared services">
+                    <a href="https://forms.office.com/pages/responsepage.aspx?id=wF1Tz_xz6kGhdBfzfO1_50Pz0X_itztMnpNZc2i1lCdUNFhQODkwNDI1NkY2MVNWT09MNDVOVjAyMC4u" target="_blank">
+                        <div class="card-icon">
+                            <img src="./SPV.png" alt="SS SPV Escalations">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-title">SS SPV Escalations</div>
+                            <div class="card-category">Shared Services</div>
+                        </div>
+                    </a>
+                </div>
         </main>
 
         <footer class="footer">
